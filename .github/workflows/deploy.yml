@@ -1,0 +1,52 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  verify:
+    uses: fsancheztemprano/html-builder/.github/workflows/verify.yml@master
+  deploy:
+    runs-on: ubuntu-latest
+    needs: verify
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: Use Node 16
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version: '16'
+
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v5
+
+      - name: Cache Node modules
+        uses: fsancheztemprano/cache@main
+        env:
+          cache-key: ${{ runner.os }}-yarn-v2
+        with:
+          path: |
+            ~/.npm
+            ./node_modules
+            ./node
+          key: ${{ env.cache-key }}-${{ steps.branch-name.outputs.current_branch }}-${{ hashFiles('**/package-lock.json') }}-${{ github.run_id }}
+          restore-keys: |
+            ${{ env.cache-key }}-${{ steps.branch-name.outputs.current_branch }}-${{ hashFiles('**/package-lock.json') }}-
+            ${{ env.cache-key }}-${{ steps.branch-name.outputs.current_branch }}-
+            ${{ env.cache-key }}-
+
+      - name: Npm Install
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload Deployed Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: dist/packages/html-builder/**
