@@ -1,6 +1,6 @@
 {
   "name": "@frango9000/html-builder",
-  "version": "0.0.1-3",
+  "version": "0.0.1",
   "type": "commonjs",
   "license": "MIT",
   "description": "Build HTML elements using javascript",
