@@ -9,7 +9,7 @@ Install:
 
 Usage: 
 
-``import {a,p} from '@frango9000/html-builder'``
+``import {a,p,customTag} from '@frango9000/html-builder'``
 
 .
 
@@ -24,3 +24,7 @@ Produces: ``<p>Paragraph</p>``
 ``a({href: "google.com", "Link")``
 
 Produces: ``<a href="google.com">Link</p>``
+
+``customTag("pre", {zindex: "0", "Text")``
+
+Produces: ``<pre zindex="0">Text</pre>``
