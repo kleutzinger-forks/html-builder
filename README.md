@@ -1,6 +1,6 @@
 JS to HTML string builder
 
-
+Use Js to generate html strings
 
 Install:
 
@@ -9,7 +9,7 @@ Install:
 
 Usage: 
 
-``import {a,p,customTag} from '@frango9000/html-builder'``
+``import {a,p,br,customTag} from '@frango9000/html-builder'``
 
 .
 
@@ -17,14 +17,74 @@ Usage:
 
 .
 
-``p("Paragraph")``
+##  Simple tags:
 
-Produces: ``<p>Paragraph</p>``
+``p("Paragraph")`` Outputs: ``<p>Paragraph</p>``
 
-``a({href: "google.com", "Link")``
+## With attributes: 
 
-Produces: ``<a href="google.com">Link</p>``
+``a({href: "google.com", "Link")`` Outputs: ``<a href="google.com">Link</p>``
 
-``customTag("pre", {zindex: "0", "Text")``
+## Self closing tags:
 
-Produces: ``<pre zindex="0">Text</pre>``
+``img({src: "localhost"}, "Text")`` Outputs: ``<img url="localhost" />``
+
+## Custom Tags:
+
+``customTag("pre", {zindex: "0"}, "Text")`` Outputs: ``<pre zindex="0">Text</pre>``
+
+
+## Supported Tags
+
+- style
+- title
+- a
+- h1
+- h2
+- h3
+- h4
+- h5
+- h6
+- p
+- b
+- i
+- q
+- strong
+- em
+- pre
+- code
+- div
+- span
+- table
+- thead
+- tbody
+- tfoot
+- tr
+- td
+- th
+- colgroup
+- caption
+- ul
+- ol
+- li
+- dt
+- dd
+- details
+- summary
+
+### Self Closing Tags
+
+- area
+- base
+- br
+- col
+- embed
+- hr
+- img
+- input
+- link
+- meta
+- param
+- source
+- track
+- wbr

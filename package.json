@@ -31,7 +31,8 @@
     "lint": "eslint src/**/*.ts",
     "test": "jest",
     "build": "tsc",
-    "all": "npm run format && npm test && npm run build"
+    "all": "npm run format && npm test && npm run build",
+    "publish": "np"
   },
   "dependencies": {},
   "devDependencies": {

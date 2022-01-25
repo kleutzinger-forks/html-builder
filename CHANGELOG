@@ -1,0 +1,66 @@
+v0.0.3
+
+- Add Tags:
+      - style
+      - title
+      - q
+      - strong
+      - em
+      - pre
+      - code
+      - colgroup
+      - caption
+      - dt
+      - dd
+- Add support for self closing tags:
+- Add Self Closing Tags
+      - area
+      - base
+      - br
+      - col
+      - embed
+      - hr
+      - img
+      - input
+      - link
+      - meta
+      - param
+      - source
+      - track
+      - wbr
+
+
+v0.0.2
+
+- Add customTag()
+- New Tags:
+      - i
+      - h4
+      - h5
+      - h6
+      - thead
+      - tfoot
+      - ul
+      - ol
+      - li
+
+
+v0.0.1
+
+- Initial implementation
+- Initial Tags:
+      - a
+      - p
+      - b
+      - div
+      - span
+      - h1
+      - h2
+      - h3
+      - details
+      - summary
+      - table
+      - tbody
+      - tr
+      - td
+      - th
