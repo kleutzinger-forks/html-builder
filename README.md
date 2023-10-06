@@ -1,14 +1,16 @@
 JS to HTML string builder
 
+forked from https://github.com/frango9000/html-builder to add a couple extra tags
+
 Use Js to generate html strings
 
 Install:
 
-`npm i @kleutzinger-forks/html-builder`
+`npm i @kleutzinger/html-builder`
 
 Usage:
 
-`import {a,p,br,customTag} from '@kleutzinger-forks/html-builder'`
+`import {a,p,br,customTag} from '@kleutzinger/html-builder'`
 
 .
 
