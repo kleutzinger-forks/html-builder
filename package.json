@@ -1,6 +1,6 @@
 {
   "name": "@kleutzinger/html-builder",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "commonjs",
   "license": "MIT",
   "description": "Build HTML elements using javascript",
