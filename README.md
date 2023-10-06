@@ -4,35 +4,33 @@ Use Js to generate html strings
 
 Install:
 
-``npm i @frango9000/html-builder``
+`npm i @kleutzinger-forks/html-builder`
 
+Usage:
 
-Usage: 
-
-``import {a,p,br,customTag} from '@frango9000/html-builder'``
-
-.
+`import {a,p,br,customTag} from '@kleutzinger-forks/html-builder'`
 
 .
 
 .
 
-##  Simple tags:
+.
 
-``p("Paragraph")`` Outputs: ``<p>Paragraph</p>``
+## Simple tags:
 
-## With attributes: 
+`p("Paragraph")` Outputs: `<p>Paragraph</p>`
 
-``a({href: "google.com", "Link")`` Outputs: ``<a href="google.com">Link</p>``
+## With attributes:
+
+`a({href: "google.com", "Link")` Outputs: `<a href="google.com">Link</p>`
 
 ## Self closing tags:
 
-``img({src: "localhost"}, "Text")`` Outputs: ``<img url="localhost" />``
+`img({src: "localhost"}, "Text")` Outputs: `<img url="localhost" />`
 
 ## Custom Tags:
 
-``customTag("pre", {zindex: "0"}, "Text")`` Outputs: ``<pre zindex="0">Text</pre>``
-
+`customTag("pre", {zindex: "0"}, "Text")` Outputs: `<pre zindex="0">Text</pre>`
 
 ## Supported Tags
 
@@ -71,6 +69,11 @@ Usage:
 - dd
 - details
 - summary
+- option
+- select
+- textarea
+- optgroup
+- button
 
 ### Self Closing Tags
 

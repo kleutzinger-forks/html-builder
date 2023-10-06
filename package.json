@@ -1,6 +1,6 @@
 {
-  "name": "@frango9000/html-builder",
-  "version": "0.0.4",
+  "name": "@kleutzinger-forks/html-builder",
+  "version": "0.0.5",
   "type": "commonjs",
   "license": "MIT",
   "description": "Build HTML elements using javascript",
@@ -8,19 +8,19 @@
     "html",
     "builder"
   ],
-  "homepage": "https://github.com/frango9000/html-builder",
+  "homepage": "https://github.com/kleutzinger-forks/html-builder",
   "bugs": {
-    "url": "https://github.com/frango9000/html-builder/issues",
-    "email": "frango9000@gmail.com"
+    "url": "https://github.com/kleutzinger-forks/html-builder/issues",
+    "email": "kleutzinger-forks@gmail.com"
   },
   "author": {
-    "name": "Francisco Sanchez",
-    "email": "frango9000@gmail.com",
-    "url": "https://frango9000.github.io/"
+    "name": "Kevin Leutzinger",
+    "email": "thedookmaster@gmail.com",
+    "url": "https://kevinleutzinger.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frango9000/html-builder"
+    "url": "https://github.com/kleutzinger-forks/html-builder"
   },
   "main": "./dist/html-builder.js",
   "typings": "./dist/html-builder.d.ts",

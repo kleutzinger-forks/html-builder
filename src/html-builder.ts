@@ -61,6 +61,12 @@ export const li = tag('li');
 export const dt = tag('dt');
 export const dd = tag('dd');
 
+export const option = tag('option');
+export const button = tag('button');
+export const select = tag('select');
+export const optgroup = tag('optgroup');
+export const textarea = tag('textarea');
+
 export const details = tag('details');
 export const summary = tag('summary');
 
